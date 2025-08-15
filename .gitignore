@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+.eggs/
+.egg-info/
+dist/
+build/
+*.sqlite3
+
+# Docker
+.dockerignore
+docker-compose.yml
+
+# IDE
+.idea/
+.vscode/
+
+# Gemini
+.gemini/
+GEMINI.log

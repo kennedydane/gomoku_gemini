@@ -5,23 +5,23 @@ This document provides a comprehensive, fine-grained set of steps to build the G
 ## Phase 1: Project Setup & Core Foundation
 
 ### Task 1.1: Initialize Project Structure
-- [ ] Create the main project directory `gomoku`.
-- [ ] Inside `gomoku`, create the `backend` directory.
-- [ ] Run `django-admin startproject app backend` to create the project skeleton.
-- [ ] Create `users`, `games`, `core`, and `web` Django apps.
-- [ ] Set up the directory structure as outlined in `GEMINI.plan`.
+- [x] Create the main project directory `gomoku`.
+- [x] Inside `gomoku`, create the `backend` directory.
+- [x] Run `django-admin startproject app backend` to create the project skeleton.
+- [x] Create `users`, `games`, `core`, and `web` Django apps.
+- [x] Set up the directory structure as outlined in `GEMINI.plan`.
 
 ### Task 1.2: Configure Docker Environment
-- [ ] Create `docker-compose.yml` with `backend`, `postgres`, and `redis` services.
-- [ ] Create `Dockerfile` for the `backend` service.
-- [ ] Create `.dockerignore` and `.gitignore` files.
-- [ ] Verify that `docker compose up --build` successfully starts the services.
+- [x] Create `docker-compose.yml` with `backend`, `postgres`, and `redis` services.
+- [x] Create `Dockerfile` for the `backend` service.
+- [x] Create `.dockerignore` and `.gitignore` files.
+- [x] Verify that `docker compose up --build` successfully starts the services.
 
 ### Task 1.3: Set up `pyproject.toml` and Dependencies
-- [ ] Initialize `uv`: `uv init`.
-- [ ] Add core dependencies to `pyproject.toml`: `django`, `djangorestframework`, `psycopg2-binary`, `uv`.
-- [ ] Add development dependencies: `pytest`, `pytest-django`, `factory-boy`, `ruff`.
-- [ ] Run `uv sync` to create `uv.lock`.
+- [x] Initialize `uv`: `uv init`.
+- [x] Add core dependencies to `pyproject.toml`: `django`, `djangorestframework`, `psycopg2-binary`, `uv`.
+- [x] Add development dependencies: `pytest`, `pytest-django`, `factory-boy`, `ruff`.
+- [x] Run `uv sync` to create `uv.lock`.
 
 ### Task 1.4: Create Custom User Model (TDD)
 - [ ] **RED**: In `users/tests/test_models.py`, write a test `test_create_user` that asserts a new user can be created with a `display_name`. The test should fail as the field doesn't exist.
